@@ -1,0 +1,39 @@
+{
+  "name": "redux-sentry-middleware",
+  "version": "0.0.1",
+  "description": "Redux middleware for propagating Redux state/actions to use with new @sentry/browser and @sentry/node.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --coverage",
+    "pretest": "npm run build"
+  },
+  "repository": "git+https://github.com/ViditIsOnline/redux-sentry-middleware.git",
+  "keywords": [
+    "redux",
+    "middleware",
+    "sentry",
+    "logging"
+  ],
+  "author": "Vidit Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ViditIsOnline/redux-sentry-middleware/issues"
+  },
+  "homepage": "https://github.com/ViditIsOnline/redux-sentry-middleware#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0",
+    "redux": "^4.0.0",
+    "rollup": "^0.66.4",
+    "rollup-plugin-babel": "^4.0.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
