@@ -2,7 +2,7 @@ const identity = x => x;
 const getUndefined = () => {};
 const filter = () => true;
 
-const createRavenMiddleware = (Sentry, options = {}) => {
+const createSentryMiddleware = (Sentry, options = {}) => {
   const {
     breadcrumbDataFromAction = getUndefined,
     actionTransformer = identity,
@@ -37,7 +37,7 @@ const createRavenMiddleware = (Sentry, options = {}) => {
 
     return next => action => {
       if (filterBreadcrumbActions(action)) {
-        Sentry.captureBreadcrumb({
+        Sentry.addBreadcrumb({
           category: breadcrumbCategory,
           message: action.type,
           level: "info",
@@ -51,4 +51,4 @@ const createRavenMiddleware = (Sentry, options = {}) => {
   };
 };
 
-module.exports = createRavenMiddleware;
+module.exports = createSentryMiddleware;
