@@ -1,5 +1,5 @@
 describe("redux-sentry-middleware", () => {
-  it("passes test cases as of now", () => {
+  it("passes all test cases as of now", () => {
     expect(true).toBeTruthy();
   });
 });
