@@ -19,16 +19,20 @@ const createSentryMiddleware = (Sentry, options = {}) => {
     Sentry.configureScope(scope => {
       scope.addEventProcessor(async (event, hint) => {
         const state = store.getState();
-        scope.setExtra("lastAction", actionTransformer(lastAction));
-        scope.setExtra("state", stateTransformer(state));
+
+        event.extra = {
+          ...event.extra,
+          lastAction: actionTransformer(lastAction),
+          state: stateTransformer(state)
+        };
 
         if (getUserContext) {
-          scope.setUser(getUserContext(state));
+          event.user = { ...event.user, ...getUserContext(state) };
         }
         if (getTags) {
           const tags = getTags(state);
           Object.keys(tags).forEach(key => {
-            scope.setTag(key, tags[key]);
+            scope.tags = { ...scope.tags, [key]: tags[key] };
           });
         }
         return event;
