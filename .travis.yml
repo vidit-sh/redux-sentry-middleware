@@ -9,3 +9,4 @@ deploy:
   on:
     tags: true
     repo: ViditIsOnline/redux-sentry-middleware
+  skip_cleanup: true
