@@ -2,7 +2,7 @@
 
 # Sentry Middleware for Redux
 
-Logs the type of each dispatched action to Raven as "breadcrumbs" and attaches
+Logs the type of each dispatched action to Sentry as "breadcrumbs" and attaches
 your last action and current Redux state as additional context.
 
 It's a rewrite of [raven-for-redux](https://github.com/captbaritone/raven-for-redux) but with new Sentry unified APIs.
