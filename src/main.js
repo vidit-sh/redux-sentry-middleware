@@ -17,7 +17,7 @@ const createSentryMiddleware = (Sentry, options = {}) => {
     let lastAction;
 
     Sentry.configureScope(scope => {
-      scope.addEventProcessor(async (event, hint) => {
+      scope.addEventProcessor((event, hint) => {
         const state = store.getState();
 
         event.extra = {
