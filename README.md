@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/vidit-sh/redux-sentry-middleware.svg?branch=master)](https://travis-ci.org/ViditIsOnline/redux-sentry-middleware)
+[![Build Status](https://travis-ci.org/vidit-sh/redux-sentry-middleware.svg?branch=master)](https://travis-ci.org/vidit-sh/redux-sentry-middleware)
+[![Latest Version](https://img.shields.io/npm/v/redux-sentry-middleware.svg)](https://www.npmjs.com/package/redux-sentry-middleware)
+[![Downloads per month](https://img.shields.io/npm/dm/redux-sentry-middleware.svg)](https://www.npmjs.com/package/redux-sentry-middleware)
 
 # Sentry Middleware for Redux
 
