@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ViditIsOnline/redux-sentry-middleware.svg?branch=master)](https://travis-ci.org/ViditIsOnline/redux-sentry-middleware)
+[![Build Status](https://travis-ci.org/vidit-sh/redux-sentry-middleware.svg?branch=master)](https://travis-ci.org/ViditIsOnline/redux-sentry-middleware)
 
 # Sentry Middleware for Redux
 
