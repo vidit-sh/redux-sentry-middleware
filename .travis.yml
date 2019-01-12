@@ -8,5 +8,5 @@ deploy:
     secure: liRuTdSLJG7OWzhhhjh7C5JthHayZ2lqaS52wUSFcTUCZW+jLrF5uy5aJ+nsiNWojlpbqkH4IFS7dodjJNfCWnpMt9sHgs1jOF5+QKJxqoH/yAcHnSqV0u+hiAGbJMMR+WQEqRn0HMK1F8hgk01CUjwVeVC3d2EIT+NKxcWShUyBBcqUB5QNRfi8R7ZijLAXJgyEQzhkQ9qvvqLRFGXQPxRnpzKL4BiCmpONy4ZFkgxGXL67QjaRaqO58JWno34aun+cygzFMnEI8J6vPh2SEXuGBfwIV8I9THCrjmjM6zar+x1TLDJE/q6n0/NcBw0ga7wuUUlgLnJi+dAMeQ6BrsP4inxLLURLqPx0DTymKe0TMm4v8c7ILn9Xbz/9JqoOYLpi9BUjC6DQtiJO4FklR+bjEsJdegcMMPivJT/ibfdb3kfCf5zfxIoWXgQLcPZeK/FtyIYxo6ku0aKAq/hIque48EWY2IjCV3LsUixAD/562wanDQPBNHuVHxN4R9cqYc2i3i8eNILRsztZC6PNUYlLQUsmXtxM7M/P/fLanzQ8kQk8r1sIaVkd2+xF7HCredluVvDZfOyozpT0VMzonvXjH3eyMnSYz3gJ9ALia06uz/VCsvwQSWazTx9iddKmBbh9igvPMTlqcjUn5XGG6mLHeeYrm3DATson8RqLusM=
   on:
     tags: true
-    repo: vidit-shah/redux-sentry-middleware
+    repo: vidit-sh/redux-sentry-middleware
   skip_cleanup: true
