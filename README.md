@@ -18,7 +18,7 @@ It's a rewrite of [raven-for-redux](https://github.com/captbaritone/raven-for-re
 ```JavaScript
 // store.js
 
-import * as Sentry "@sentry/browser"; 
+import * as Sentry from "@sentry/browser"; 
 // For usage with node 
 // import * as Sentry from "@sentry/node";
 
