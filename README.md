@@ -36,6 +36,7 @@ export default createStore(
     reducer,
     applyMiddleware(
         // Middlewares, like `redux-thunk` that intercept or emit actions should
+        // precede `redux-sentry-middleware`.
         createSentryMiddleware(Sentry, {
             // Optionally pass some options here.
         })
