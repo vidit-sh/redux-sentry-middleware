@@ -151,3 +151,15 @@ Sentry allows you to associate [tags] with each report.
 `getTags` allows you to define a mapping from your Redux `state` to
 an object of tags (key → value). Be careful not to mutate your `state`
 within this function.
+
+#### `breadcrumbMessageFromAction` _(Function)_
+
+Default: `action => action.type`
+
+`breadcrumbMessageFromAction` allows you to specify a transform function which is passed the `action` object and returns a `string` that will be used as the message of the breadcrumb.
+
+By default `breadcrumbMessageFromAction` returns `action.type`.
+
+Finally, be careful not to mutate your `action` within this function.
+
+See the Sentry [Breadcrumb documentation](https://docs.sentry.io/enriching-error-data/breadcrumbs/?platform=javascript).
