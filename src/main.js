@@ -32,7 +32,7 @@ const createSentryMiddleware = (Sentry, options = {}) => {
         if (getTags) {
           const tags = getTags(state);
           Object.keys(tags).forEach(key => {
-            scope.tags = { ...scope.tags, [key]: tags[key] };
+            event.tags = { ...event.tags, [key]: tags[key] };
           });
         }
         return event;
