@@ -1,10 +1,12 @@
 const identity = x => x;
 const getUndefined = () => {};
 const filter = () => true;
+const getType = action => action.type;
 
 const createSentryMiddleware = (Sentry, options = {}) => {
   const {
     breadcrumbDataFromAction = getUndefined,
+    breadcrumbMessageFromAction = getType,
     actionTransformer = identity,
     stateTransformer = identity,
     breadcrumbCategory = "redux-action",
@@ -43,7 +45,7 @@ const createSentryMiddleware = (Sentry, options = {}) => {
       if (filterBreadcrumbActions(action)) {
         Sentry.addBreadcrumb({
           category: breadcrumbCategory,
-          message: action.type,
+          message: breadcrumbMessageFromAction(action),
           level: "info",
           data: breadcrumbDataFromAction(action)
         });
