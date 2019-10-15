@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.3] - 2019-10-15
+
+### Fixed
+
+- `getTags` transformation fixed, was applying tags to global `scope` and not to locally created `event` scope
+
 ## [0.1.2] - 2019-10-15
 
 ### Added
