@@ -18,8 +18,8 @@ It's a rewrite of [raven-for-redux](https://github.com/captbaritone/raven-for-re
 ```JavaScript
 // store.js
 
-import * as Sentry from "@sentry/browser"; 
-// For usage with node 
+import * as Sentry from "@sentry/browser";
+// For usage with node
 // import * as Sentry from "@sentry/node";
 
 import { createStore, applyMiddleware } from "redux";
@@ -42,6 +42,34 @@ export default createStore(
         })
     )
 );
+```
+
+### Expo users running `sentry-expo`
+
+#### `sentry-expo` < 3.0:
+
+```JavaScript
+import * as Sentry from "sentry-expo";
+
+...
+
+        createSentryMiddleware(Sentry, {
+            // Optionally pass some options here.
+        })
+```
+
+#### `sentry-expo` >= 3.0:
+
+Make sure to pass the `Native` object:
+
+```JavaScript
+import * as Sentry from "sentry-expo";
+
+...
+
+        createSentryMiddleware(Sentry.Native, {
+            // Optionally pass some options here.
+        })
 ```
 
 ## API: `createSentryMiddleware(Sentry, [options])`
