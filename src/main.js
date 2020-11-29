@@ -16,8 +16,8 @@ const createSentryMiddleware = (Sentry, options = {}) => {
   } = options;
 
   return store => {
-    let lastAction;
-
+    let lastAction = null; // assigning null is a workaround since sentry api normalizes the store data and converts undefined to '[undefined]'
+    
     Sentry.configureScope(scope => {
       scope.addEventProcessor((event, hint) => {
         const state = store.getState();

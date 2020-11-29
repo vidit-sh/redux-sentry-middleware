@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/ViditIsOnline/redux-sentry-middleware#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@sentry/browser": "^5.10.2",
-    "@sentry/node": "^5.10.2",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@sentry/browser": "^5.27.6",
+    "@sentry/node": "^5.27.6",
     "babel-core": "^7.0.0-bridge.0",
     "jest": "^24.9.0",
-    "redux": "^4.0.0",
-    "rollup": "^0.66.4",
-    "rollup-plugin-babel": "^4.0.3"
+    "redux": "^4.0.5",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.4.0"
   },
   "files": [
     "dist"

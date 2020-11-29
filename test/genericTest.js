@@ -81,7 +81,7 @@ function testSentryForRaven(Sentry) {
       const { extra } = sendEvent.mock.calls[0][0];
       expect(extra).toMatchObject({
         state: { value: 0 },
-        lastAction: undefined,
+        lastAction: null,
         anotherValue: 10
       });
     });
@@ -92,7 +92,7 @@ function testSentryForRaven(Sentry) {
       const { extra } = sendEvent.mock.calls[0][0];
       expect(extra).toMatchObject({
         state: { value: 0 },
-        lastAction: undefined,
+        lastAction: null,
         anotherValue: 10
       });
     });
@@ -117,7 +117,7 @@ function testSentryForRaven(Sentry) {
       await Sentry.flush();
       expect(sendEvent).toHaveBeenCalledTimes(1);
       const { extra } = sendEvent.mock.calls[0][0];
-      expect(extra.lastAction).toBe(undefined);
+      expect(extra.lastAction).toBe(null);
       expect(extra.state).toEqual({ value: 0 });
     });
     it("returns the result of the next dispatch function", () => {
